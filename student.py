@@ -6,6 +6,8 @@ def dis_students():
 		print(f"Roll no.: {i}")
 		for k,v in d[i].items():
 			print(f"{k}: {v}")
+	if d=={}:
+		print("No student details found")
 
 dis_students()
 
@@ -28,6 +30,15 @@ def search_stud():
 			print(f"Roll no.: {i}")
 			for k,v in d[i].items():
 				print(f"{k}: {v}")
+	else:
+		print("Student not found")
+		
+		
+def del_stud():
+	user_in = input("Enter the roll no. of the student: ")
+	
+	if user_in in d.keys():
+		d.pop(user_in)
 	else:
 		print("Student not found")
 				
