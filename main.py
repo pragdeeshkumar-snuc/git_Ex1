@@ -9,6 +9,7 @@ while user_inp!="exit":
 		print("2 for Display students: ")
 		print("3 for Search student")
 		print("4 for Delete student")
+		print("5 for Validate student")
 		user_inp = input("\nEnter the choice of function to do: ")
 		if user_inp!="exit":
 			if int(user_inp) == 1:
@@ -19,5 +20,7 @@ while user_inp!="exit":
 				student.search_stud()
 			elif int(user_inp) == 4:
 				student.del_stud()
+			elif int(user_inp) == 5:
+				student.val_stud()
 			else:
 				print("Invalid choice")
