@@ -1,5 +1,7 @@
 import student
 
+print("Welcome to Student Management System")
+
 user_inp = ""
 while user_inp!="exit":
 	if user_inp!="exit":
